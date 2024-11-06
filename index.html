@@ -11,6 +11,7 @@
     font-family: 'Roboto', sans-serif;
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
@@ -35,6 +36,16 @@
         <p>Description: A Spring Boot application with an Oracle database for tracking expenses, featuring user authentication and reporting.</p>
     </div>
 </section>
+    <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><i class="fas fa-code"></i> Java</li>
+        <li><i class="fas fa-leaf"></i> Spring Boot</li>
+        <li><i class="fas fa-database"></i> Oracle DB</li>
+        <li><i class="fas fa-vial"></i> Selenium</li>
+    </ul>
+</section>
+
 
 
     <!-- Skills Section -->
@@ -56,5 +67,20 @@
         <p>Email: ritesh@example.com</p>
         <p>LinkedIn: <a href="https://linkedin.com/in/ritesh">linkedin.com/in/ritesh</a></p>
     </section>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+          entries.forEach(entry => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add('visible');
+              appearOnScroll.unobserve(entry.target);
+          });
+      }, { threshold: 0.2 });
+
+      faders.forEach(fader => appearOnScroll.observe(fader));
+  });
+</script>
+
 </body>
 </html>
