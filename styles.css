@@ -34,3 +34,32 @@ li {
     padding: 0.5em;
     border-radius: 5px;
 }
+.hero {
+    background-image: url('https://your-image-url.jpg'); /* Use a high-quality image URL here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
