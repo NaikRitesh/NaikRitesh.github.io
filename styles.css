@@ -62,4 +62,29 @@ li {
     font-size: 1.25em;
     margin: 10px 0;
 }
+#projects {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2em 0;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 1.5em;
+    margin: 1em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    margin-top: 0;
+}
+
 
