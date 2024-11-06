@@ -1,75 +1,253 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritesh's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <title>Ritesh Naik - Java Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
-   <header class="hero">
-    <div class="overlay">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Ritesh, a Java Developer passionate about building scalable applications.</p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
     </div>
-</header>
 
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">RN</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="glitch" data-text="Ritesh Naik">Ritesh Naik</h1>
+            <div class="typewriter">
+                <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/NaikRitesh" target="_blank" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ritesh-naik-39080325a" target="_blank" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <a href="#about" class="scroll-down">
+                <div class="mouse">
+                    <span></span>
+                </div>
+                <div class="arrow"></div>
+            </a>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-text">
+                    <p>Detail-oriented and dedicated Java Developer with proficiency in Java, Spring Framework, and database management. Skilled in building web applications and RESTful APIs using Spring Boot.</p>
+                    <p>Seeking an entry-level position to apply software development expertise and contribute to innovative projects in a collaborative environment.</p>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Engineering</h4>
+                            <p>AISSMS College of Engineering Pune</p>
+                            <p>CGPA: 8.4 (2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-item">
+                        <span>Spring Boot</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Hibernate</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-item">
+                        <span>Git</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Oracle</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <div class="project-card">
-        <h3>EV Charging Station Management System</h3>
-        <p>Description: An end-to-end solution for managing EV charging stations using Spring Boot, Spring Security, and Oracle DB.</p>
-    </div>
-    <div class="project-card">
-        <h3>Expense Tracker Application</h3>
-        <p>Description: A Spring Boot application with an Oracle database for tracking expenses, featuring user authentication and reporting.</p>
-    </div>
-</section>
-    <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <ul>
-        <li><i class="fas fa-code"></i> Java</li>
-        <li><i class="fas fa-leaf"></i> Spring Boot</li>
-        <li><i class="fas fa-database"></i> Oracle DB</li>
-        <li><i class="fas fa-vial"></i> Selenium</li>
-    </ul>
-</section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <h3>Expense Tracker Application</h3>
+                        <p>A personal expense tracking system using Spring Boot and Oracle database.</p>
+                        <ul>
+                            <li>Real-time balance updates</li>
+                            <li>User authentication with Spring Security</li>
+                            <li>Expense categorization</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>Oracle</span>
+                            <span>Spring Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-content">
+                        <h3>Employee Management System</h3>
+                        <p>Web application for managing employee records using Spring Boot and Hibernate.</p>
+                        <ul>
+                            <li>CRUD operations</li>
+                            <li>User-friendly interface</li>
+                            <li>Database integration</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>Hibernate</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-  
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Java Full Stack Developer (Trainee)</h3>
+                        <h4>Naresh I Technologies, Hyderabad</h4>
+                        <p class="timeline-date">2024</p>
+                        <ul>
+                            <li>Completed extensive Java Full Stack Development training</li>
+                            <li>Built multiple web applications during the course</li>
+                            <li>Developed CRUD-based applications</li>
+                            <li>Enhanced team collaboration skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <h2>Contact Me</h2>
-        <p>Email: ritesh@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ritesh">linkedin.com/in/ritesh</a></p>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:naikritesh4312@gmail.com">naikritesh4312@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:9511895961">+91 9511895961</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-      const faders = document.querySelectorAll('.fade-in');
-      const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
-          entries.forEach(entry => {
-              if (!entry.isIntersecting) return;
-              entry.target.classList.add('visible');
-              appearOnScroll.unobserve(entry.target);
-          });
-      }, { threshold: 0.2 });
 
-      faders.forEach(fader => appearOnScroll.observe(fader));
-  });
-</script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ritesh Naik. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
